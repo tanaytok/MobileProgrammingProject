@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.YemekDefteri" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/button_red</item>
+        <item name="colorPrimaryVariant">@color/background_orange</item>
+        <item name="colorOnPrimary">@color/button_text_white</item>
+    </style>
+
+    <style name="Theme.YemekDefteri" parent="Base.Theme.YemekDefteri" />
+</resources>

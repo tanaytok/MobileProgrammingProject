@@ -1,0 +1,43 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_orange"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edtRecipeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Yemek Adı" />
+
+    <EditText
+        android:id="@+id/edtRecipeDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tarif Detayları"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/edtCalories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kalori"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnSaveRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kaydet"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cookbook2" />
+
+</LinearLayout>

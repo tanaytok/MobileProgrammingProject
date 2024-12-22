@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_orange"
+    android:padding="16dp">
+
+    <!-- Tarifleri Listele Butonu -->
+    <Button
+        android:id="@+id/buttonListRecipes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yemek Tariflerini Listele"
+        android:background="@color/button_red"
+        android:textColor="@color/button_text_white"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Yeni Tarif Ekle Butonu -->
+
+    <Button
+        android:id="@+id/buttonAddRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@color/button_red"
+        android:textColor="@color/button_text_white"
+        android:text="Yeni Tarif Ekle" />
+
+    <!-- Tarifleri göstermek için RecyclerView -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yemek Tarifleri Uygulaması"
+        android:textStyle="bold"
+        android:textColor="@color/button_red"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:layout_marginTop="25dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="379dp"
+        android:layout_height="391dp"
+        android:layout_marginTop="25dp"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif"
+        android:textSize="10sp"
+        android:textColor="@color/button_red"
+        android:text="Made by Tan Aytok &amp; Merve Kılıç" />
+
+</LinearLayout>
