@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <!-- Toolbar (App Bar) -->
+    <Button
+        android:id="@+id/deleteProductButton"
+        android:layout_width="232dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:text="Kayıt Sil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextID" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:title="Ürün Yönetimi"
+        app:titleTextColor="@android:color/white" />
+
+    <!-- EditText: Ürün Adı -->
+    <EditText
+        android:id="@+id/editTextProductName"
+        android:layout_width="357dp"
+        android:layout_height="66dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Ürün Adı"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- EditText: Ürün Markası -->
+    <EditText
+        android:id="@+id/editTextProductBrand"
+        android:layout_width="357dp"
+        android:layout_height="66dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Ürün Markası"
+        app:layout_constraintTop_toBottomOf="@id/editTextProductName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Button: Kayıt Ekle -->
+    <Button
+        android:id="@+id/addProductButton"
+        android:layout_width="232dp"
+        android:layout_height="63dp"
+        android:text="Kayıt Ekle"
+        app:layout_constraintTop_toBottomOf="@id/editTextProductBrand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Button: Kayıt Güncelle -->
+    <Button
+        android:id="@+id/updateProductButton"
+        android:layout_width="232dp"
+        android:layout_height="63dp"
+        android:text="Kayıt Güncelle"
+        app:layout_constraintTop_toBottomOf="@id/addProductButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- EditText: ID -->
+    <EditText
+        android:id="@+id/editTextID"
+        android:layout_width="357dp"
+        android:layout_height="66dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="ID Giriniz"
+        app:layout_constraintTop_toBottomOf="@id/updateProductButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Button: Kayıt Sil -->
+    <Button
+        android:id="@+id/getNameButton"
+        android:layout_width="232dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="108dp"
+        android:text="Kayıtları Göster"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextID" />
+
+
+    <TextView
+        android:id="@+id/productListTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ürünler burada görünecek"
+        app:layout_constraintTop_toBottomOf="@id/getNameButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
